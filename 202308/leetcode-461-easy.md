@@ -37,13 +37,13 @@
 
 ```java
 public int hammingDistance(int x, int y) {
-		int ans = 0;
-		for (int i = 0; i < 32; i++) {
-				int a = (x >> i) & 1;
-				int b = (y >> i) & 1;
-				ans += a ^ b;
-		}
-		return ans;
+	int ans = 0;
+	for (int i = 0; i < 32; i++) {
+		int a = (x >> i) & 1;
+		int b = (y >> i) & 1;
+		ans += a ^ b;
+	}
+	return ans;
 }
 ```
 
@@ -59,12 +59,12 @@ Brian Kernighan算法可以用于清除二进制数中最右侧的1。Brian Kern
 
 ```java
 public int hammingDistance(int x, int y) { 
-		int s = x ^ y; 
-		int ret = 0; 
-		while( s != 0) { 
-				s &= s - 1; 
-				ret++;
-		}
+	int s = x ^ y; 
+	int ret = 0; 
+	while( s != 0) { 
+		s &= s - 1; 
+		ret++;
+	}
     return ret;
 }
 ```
