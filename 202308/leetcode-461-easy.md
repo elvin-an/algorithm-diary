@@ -1,6 +1,6 @@
 ## leetcode-461-easy
 
-[链接](https://leetcode.cn/problems/hamming-distance/description/)
+[汉明距离](https://leetcode.cn/problems/hamming-distance/description/)
 
 ##### 题目描述
 
