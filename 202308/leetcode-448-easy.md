@@ -15,6 +15,8 @@
 ###### 思路1：
 
 初始化一个大小为n，且每个元素的值为-1的数组，遍历nums，并将nums[i] - 1对应小标的值更新为1，统计值为-1的下标
+
+###### 代码：
 ```
 	public List<Integer> findDisappearedNumbers(int[] nums) {
 		List<Integer> ans = new ArrayList<>();
@@ -40,6 +42,8 @@
 ###### 思路2：
 
 原地修改，遍历nums,每遇到一个数x，就让nums[x - 1]增加n,最后遍历nums判断nums[i]是否大于n
+
+###### 代码：
 ```
     public List<Integer> findDisappearedNumbers(int[] nums) {
         int n = nums.length;
